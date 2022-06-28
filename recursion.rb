@@ -30,12 +30,12 @@ def merge_sort(arr, a = [])
   if arr.length < 2
     return arr
   else
-    b = merge_sort(arr.slice(0, arr.length/2))
-    c = merge_sort(arr.slice(arr.length/2, arr.length))
+    b = merge_sort(arr[0...arr.length/2])
+    c = merge_sort(arr[arr.length/2...arr.length])
 
     i = 0
     n = 0
-
+    
     while i < b.length && n < c.length
       if b[i] < c[n]
         a << b[i]
