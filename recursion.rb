@@ -24,6 +24,8 @@ end
 print fibs_rec(8)
 puts "\n"
 
+
+# recursive merge_sort function 
 def merge_sort(arr, a = [])
   if arr.length < 2
     return arr
@@ -55,11 +57,10 @@ def merge_sort(arr, a = [])
         i += 1
       end
     end
-    a
   end
   a
 end
 
-arr = [8, 9, 2, 5, 3, 1, 4, 9]
+arr = [8, 9, 2, 5, 3, 1, 4, 9, 0]
 print merge_sort(arr)
 puts "\n"
